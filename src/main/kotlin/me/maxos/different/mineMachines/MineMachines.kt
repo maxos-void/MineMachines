@@ -134,7 +134,7 @@ class MineMachines : JavaPlugin() {
 
 		blockPlace = BlockPlace(machineItemStack, this, machinesContainer, messagesManager)
 		blockBreak = BlockBreak(machinesContainer, gpuItemStack, configManager, messagesManager)
-		cardBlockPlace = CardBlockPlace(configManager)
+		cardBlockPlace = CardBlockPlace(configManager, this)
 		banActionsBlock = BanActionsBlock(machinesContainer, configManager)
 		clickOnBlock = ClickOnBlock(menuConfigManager, clickButton, machinesContainer, this, configManager, databaseManager, gpuItemStack, messagesManager)
 		blockExplodes = BlockExplodes(machinesContainer, configManager, gpuItemStack, messagesManager)
